@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+      <title>Error Page</title> 
+      <style type="text/css" media="screen"> 
+          body { 
+              background-color: skyblue; 
+              text-decoration-color: white; 
+              font-size:7em;  
+          }
+          .centered-p {
+            text-align: center;
+          }
+      </style> 
+  </head> 
+  <body>
+      <h1><%=message%></h1>
+      <p class="centered-p">  
+          <pre>
+            <%=error.stack%>
+          </pre>
+      </p> 
+  </body> 
+</html> 

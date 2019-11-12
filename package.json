@@ -1,0 +1,54 @@
+{
+  "name": "tga-react-mobx-ssr",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Koushik Sadhukhan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koushik0004/tga-react-mobx-ssr.git"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn build:server\" \"yarn build:client\"  \"nodemon ./build/app\"",
+    "build:server-prod": "webpack -p --config webpack.config.server.js",
+    "build:client-prod": "webpack -p --config webpack.config.client.js",
+    "build:server": "webpack --watch --config webpack.config.server.js",
+    "build:client": "webpack --watch --config webpack.config.client.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^5.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "^2.7.1",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "morgan": "~1.9.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
+    "autoprefixer": "^9.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "isomorphic-style-loader": "^4.0.0",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.18.4",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
