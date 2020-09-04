@@ -43,7 +43,7 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
     "isomorphic-style-loader": "^4.0.0",
-    "node-sass": "^4.9.4",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.4",
     "postcss-loader": "^3.0.0",
     "prop-types": "^15.6.2",
